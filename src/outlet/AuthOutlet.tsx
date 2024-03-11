@@ -26,6 +26,7 @@ const AuthOutlet: FC<Props> = ({ requiredAuthentication = true, ...props }) => {
       setUser(user.data?.user);
       console.log({ user });
     } catch (error) {
+      setUser(null);
       console.error(error);
     }
   };

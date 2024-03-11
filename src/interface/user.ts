@@ -14,9 +14,16 @@ export enum ROLES {
   TEACHER = 2,
   STUDENT = 3,
 }
+export enum ROLES_LABEL {
+  "Super_Admin" = "Super_Admin",
+  "Admin" = "Admin",
+  "Teacher" = "Teacher",
+  "Student" = "Student",
+}
 
+export type Role_Label = `${ROLES_LABEL}`;
 export interface Role {
   id: ROLES;
-  label: string;
+  label: Role_Label;
   scopes: any[];
 }

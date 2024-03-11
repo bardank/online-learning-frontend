@@ -12,13 +12,16 @@ const CourseCard: React.FC<Props> = ({ title }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">
-          Shoes!
+          Java Programming Course
           <div className="badge badge-secondary">NEW</div>
         </h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+          est? Enim consectetur minima ipsam assumenda.
+        </p>
         <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
+          <div className="badge badge-outline">Java</div>
+          <div className="badge badge-outline">Web Development</div>
         </div>
       </div>
     </div>
