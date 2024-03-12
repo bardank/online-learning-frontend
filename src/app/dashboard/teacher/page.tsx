@@ -1,18 +1,18 @@
 import Sidebar from "@/components/Dashboard/Sidebar";
+import DashboardLayout from "@/layouts/DashboardLayout";
 import AuthOutlet from "@/outlet/AuthOutlet";
 import React from "react";
 
 interface Props {
-  name: string;
 }
 
-const TeacherDashboard: React.FC<Props> = ({ name }) => {
+const TeacherDashboard: React.FC<Props> = ({  }) => {
   return (
-    <AuthOutlet>
-      <div className="">
-        <Sidebar />
+    <DashboardLayout>
+      <div className="flex flex-col items-center justify-center h-full">
+        <h1 className="text-4xl font-bold">Welcome,</h1>
       </div>
-    </AuthOutlet>
+    </DashboardLayout>
   );
 };
 
